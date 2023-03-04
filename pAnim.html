@@ -10,19 +10,24 @@
     <link type="text/css" rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div id="container" ></div>
+    <div id="container"></div>
 
     <div id="title">
       <h1>Particle Animation</h1>
       <div id="colors"></div>
       <p></p>
       <div class="log"></div>
+      <ul>
+        <li><a href="./index.html">« Index</a></li>
+      </ul>
+      <div>
+        <button id="Home">Home</button>
+        <button id="About">About</button>
+        <button id="SendOutput">Print Vertices</button>
+      </div>
     </div>
-    <ul>
-      <li><a href="./index.html">« Index</a></li>
-    </ul>
-    <div id="progress-bar"></div>
 
+    <div id="progress-bar"></div>
     <script src="https://unpkg.com/stats.js@0.17.0/build/stats.min.js"></script>
 
     <!-- Import maps polyfill -->
@@ -43,6 +48,9 @@
       }
     </script>
     <script src="helpers.js"></script>
+    <script>
+      const pageName = "Home";
+    </script>
     <script type="module" src="pAnim.js"></script>
   </body>
 </html>

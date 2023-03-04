@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Model1</title>
+    <title>Particle Animation</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -13,16 +13,23 @@
     <div id="container"></div>
 
     <div id="title">
-      <h1>Model.1</h1>
+      <h1>Particle Animation</h1>
       <div id="colors"></div>
       <p></p>
       <div class="log"></div>
       <ul>
-        <li><a href="./pAnim.html">Particle Animations</a></li>
+        <li><a href="./index.html">« Index</a></li>
+        <li><a href="./about.html">« About</a></li>
+        <li><a href="./pAnim.html">« Particle Animation</a></li>
       </ul>
+      <div>
+        <button id="Home">Home</button>
+        <button id="About">About</button>
+        <button id="SendOutput">Print Vertices</button>
+      </div>
     </div>
-    <div id="progress-bar"></div>
 
+    <div id="progress-bar"></div>
     <script src="https://unpkg.com/stats.js@0.17.0/build/stats.min.js"></script>
 
     <!-- Import maps polyfill -->
@@ -43,6 +50,9 @@
       }
     </script>
     <script src="helpers.js"></script>
-    <script type="module" src="app.js"></script>
+    <script>
+      const pageName = "About";
+    </script>
+    <script type="module" src="pAnim.js"></script>
   </body>
 </html>
